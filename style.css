@@ -1,0 +1,142 @@
+/* Configuración General */
+:root {
+    --pink-bg: #f5e6e8; /* Color de la barra lateral */
+    --dark-text: #4a4a4a;
+    --accent-pink: #d8b4b8; /* Color de las barras de título */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    color: var(--dark-text);
+    display: flex;
+    justify-content: center;
+}
+
+.cv-container {
+    width: 210mm; /* Tamaño A4 aproximado */
+    min-height: 297mm;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* --- BARRA LATERAL --- */
+.sidebar {
+    background-color: var(--pink-bg);
+    padding: 40px 20px;
+}
+
+.profile-img-container {
+    border: 10px solid white;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.profile-img {
+    width: 100%;
+    display: block;
+}
+
+.sidebar-section {
+    margin-bottom: 30px;
+}
+
+.sidebar-section h3 {
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.sidebar-section p, .sidebar-section li {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.contact-item img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.main-content {
+    padding: 40px;
+    background-color: white;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.first-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 0;
+    font-style: italic;
+}
+
+.last-name {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.divider {
+    height: 2px;
+    background-color: var(--accent-pink);
+    width: 80%;
+    margin: 15px auto;
+}
+
+.subtitle {
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.section-title {
+    background-color: var(--pink-bg);
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.job, .edu-item {
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+h4 {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
