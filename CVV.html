@@ -4,43 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Fernanda Recillas León</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="contenedor-cv">
+    <div class="cv-container">
         <aside class="sidebar">
-            <div class="foto-marco">
-                <img src="CV/foto.png" alt="Foto de Perfil">
+            <div class="profile-img-container">
+                <img src="CV/foto.jpg" alt="Fernanda Recillas" class="profile-img">
             </div>
 
-            <section class="seccion-lateral">
+            <section class="sidebar-section">
                 <h3>SOBRE MÍ</h3>
-                <hr>
-                <p>Soy estudiante con actitud positiva, responsable y con vocación de servicio. Me gusta trabajar con niños y ayudar a las personas. Tengo interés en desarrollarme en el área de la salud, especialmente en medicina o QFB.</p>
+                <p>Soy estudiante con actitud positiva, responsable y con vocación de servicio. Me gusta trabajar con niños y ayudar a las personas...</p>
             </section>
 
-            <section class="seccion-lateral">
+            <section class="sidebar-section">
                 <h3>CONTACTO</h3>
-                <hr>
-                <div class="item-contacto">
-                    <img src="CV/tel.png" class="icono"> 7122953018
+                <div class="contact-item">
+                    <img src="CV/phone.png" alt="tel"> <span>7122953018</span>
                 </div>
-                <div class="item-contacto">
-                    <img src="CV/mail.png" class="icono"> ferrabig83@gmail.com
+                <div class="contact-item">
+                    <img src="CV/mail.png" alt="email"> <span>ferrabig83@gmail.com</span>
                 </div>
-                <div class="item-contacto">
-                    <img src="CV/web.png" class="icono"> -
+                <div class="contact-item">
+                    <img src="CV/web.png" alt="web"> <span>...</span>
                 </div>
-                <div class="item-contacto">
-                    <img src="CV/location.png" class="icono"> Calle 22 de marzo, colonia San Francisco de Asís, núm. 5
+                <div class="contact-item">
+                    <img src="CV/location.png" alt="loc"> <span>Calle 22 de marzo, col. San Francisco de Asís, núm. 5</span>
                 </div>
             </section>
 
-            <section class="seccion-lateral">
+            <section class="sidebar-section">
                 <h3>HABILIDADES</h3>
-                <hr>
                 <ul>
                     <li>Uso de Word</li>
                     <li>Organización</li>
@@ -49,9 +46,8 @@
                 </ul>
             </section>
 
-            <section class="seccion-lateral">
+            <section class="sidebar-section">
                 <h3>IDIOMAS</h3>
-                <hr>
                 <ul>
                     <li>Español (nativo)</li>
                     <li>Inglés (intermedio)</li>
@@ -60,19 +56,20 @@
             </section>
         </aside>
 
-        <main class="contenido-principal">
-            <header>
-                <h1 class="nombre">Fernanda</h1>
-                <h2 class="apellido">RECILLAS LEÓN</h2>
-                <p class="subtitulo">FUTURA DOCTORA O QFB</p>
+        <main class="main-content">
+            <header class="header">
+                <h1 class="first-name">Fernanda</h1>
+                <h2 class="last-name">RECILLAS LEÓN</h2>
+                <div class="divider"></div>
+                <p class="subtitle">FUTURA DOCTORA O QFB</p>
             </header>
 
-            <section class="seccion-derecha">
-                <h3 class="titulo-seccion">EXPERIENCIA</h3>
+            <section class="experience-section">
+                <h3 class="section-title">EXPERIENCIA</h3>
                 
-                <div class="bloque">
+                <div class="job">
                     <h4>ESTUDIOS EN EUROPA</h4>
-                    <span class="fecha">2023 y 2025</span>
+                    <p class="date">2023 y 2025</p>
                     <ul>
                         <li>Participación en programas educativos internacionales</li>
                         <li>Adaptación a nuevos entornos académicos y culturales</li>
@@ -80,9 +77,9 @@
                     </ul>
                 </div>
 
-                <div class="bloque">
+                <div class="job">
                     <h4>AUXILIAR ADMINISTRATIVA (TALLER MECÁNICO)</h4>
-                    <span class="fecha">2020 - 2023</span>
+                    <p class="date">2020 - 2023</p>
                     <ul>
                         <li>Atención a clientes</li>
                         <li>Organización de documentos</li>
@@ -90,27 +87,27 @@
                     </ul>
                 </div>
 
-                <div class="bloque">
+                <div class="job">
                     <h4>CERTIFICACIONES Y CURSOS</h4>
-                    <p><strong>Coursera</strong></p>
-                    <span class="fecha">2025-2026</span>
-                    <p>Cuento con 10 certificados de Coursera, en diferentes aspectos y temas. todos pasados con mayor de 85%</p>
+                    <p class="company">Coursera</p>
+                    <p class="date">2025-2026</p>
+                    <p>Cuento con 10 certificados de Coursera, en diferentes aspectos y temas, todos pasados con mayor de 85%</p>
                 </div>
             </section>
 
-            <section class="seccion-derecha">
-                <h3 class="titulo-seccion">FORMACIÓN</h3>
+            <section class="education-section">
+                <h3 class="section-title">FORMACIÓN</h3>
                 
-                <div class="bloque">
+                <div class="edu-item">
                     <h4>SECUNDARIA</h4>
                     <p>Instituto Cultural Canadiense</p>
-                    <span class="fecha">2020-2023</span>
+                    <p class="date">2020-2023</p>
                 </div>
 
-                <div class="bloque">
+                <div class="edu-item">
                     <h4>PREPARATORIA</h4>
                     <p>Instituto Cultural Canadiense</p>
-                    <span class="fecha">2023-2026 (en curso)</span>
+                    <p class="date">2023-2026 (en curso)</p>
                 </div>
             </section>
         </main>
