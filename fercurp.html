@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constancia CURP - Réplica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .curp-container {
+            width: 800px;
+            background-color: white;
+            border: 15px solid #4a6741; /* Borde verde decorativo */
+            padding: 30px;
+            position: relative;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            color: #4a6741;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        .header h2 {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #b38e5d; /* Color dorado/café */
+        }
+        .main-content {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 150px 1fr 150px;
+            align-items: center;
+        }
+        .flag-section {
+            text-align: center;
+        }
+        .flag-section img {
+            width: 80px;
+        }
+        .flag-section p {
+            color: #888;
+            font-style: italic;
+            font-size: 22px;
+        }
+        .data-section {
+            padding-left: 20px;
+        }
+        .label {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+        .value {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .qr-section img {
+            width: 120px;
+            height: 120px;
+        }
+        .footer-logos {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .footer-logos img {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="curp-container">
+    <div class="header">
+        <h1>Estados Unidos Mexicanos</h1>
+        <h2>CONSTANCIA DE LA CLAVE ÚNICA DE REGISTRO DE POBLACIÓN</h2>
+    </div>
+
+    <div class="main-content">
+        <!-- Lado Izquierdo: Bandera -->
+        <div class="flag-section">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Bandera de México">
+            <p>Soy México</p>
+        </div>
+
+        <!-- Centro: Datos del usuario -->
+        <div class="data-section">
+            <div class="label">Clave:</div>
+            <div class="value">RELF080904MMCCNRA0</div>
+
+            <div class="label">Nombre</div>
+            <div class="value">FERNANDA ABIGAIL RECILLAS LEON</div>
+
+            <div class="label">Entidad de registro: &nbsp;&nbsp;&nbsp; <span style="font-weight: bold; font-size: 18px;">MEXICO</span></div>
+        </div>
+
+        <!-- Lado Derecho: QR -->
+        <div class="qr-section">
+            <!-- Espacio para el código QR -->
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=RELF080904MMCCNRA0" alt="Código QR">
+        </div>
+    </div>
+
+    <!-- Logos inferiores -->
+    <div class="footer-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Logo_Gobierno_de_M%C3%A9xico.png/640px-Logo_Gobierno_de_M%C3%A9xico.png" alt="Gobierno de México">
+        <img src="https://www.gob.mx/cms/uploads/image/file/489035/SEGOB_Gobernacion.png" alt="Gobernación">
+        <img src="https://www.gob.mx/cms/uploads/image/file/354747/RENAPO.png" alt="RENAPO">
+    </div>
+</div>
+
+</body>
+</html>
