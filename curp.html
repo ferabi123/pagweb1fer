@@ -3,32 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualización de Imagen</title>
+    <title>Visor de Documento - Junior Dev</title>
     <style>
+        /* Reseteo básico para evitar márgenes extraños */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            padding: 20px;
         }
-        .container {
-            max-width: 90%;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        img {
-            display: block;
+
+        .card-container {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 1000px; /* Ajustamos el ancho máximo */
             width: 100%;
-            height: auto;
+        }
+
+        .image-wrapper img {
+            display: block;
+            width: 100%;    /* La imagen ocupará el 100% del contenedor */
+            height: auto;   /* Mantiene la proporción original */
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .info-tag {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: #666;
+            text-align: right;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- Referencia exacta al archivo solicitado -->
-        <img src="Captura de pantalla 2026-05-12 143557.jpg" alt="CURP - Fernanda Abigail Recillas Leon">
+    <div class="card-container">
+        <div class="image-wrapper">
+            <!-- Referencia al archivo exacto solicitado -->
+            <img src="Captura de pantalla 2026-05-12 143557.jpg" 
+                 alt="Documento oficial de Fernanda Abigail Recillas Leon">
+        </div>
+        <p class="info-tag">Vista de archivo: Captura de pantalla 2026-05-12 143557.jpg</p>
     </div>
 
 </body>
